@@ -1,0 +1,470 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: grid;
+}
+
+.sitetop {
+    margin-top: 10%;
+}
+
+.landing {
+    text-align: center;
+}
+
+.background {
+    background: var(--daniel3);
+}
+
+.value {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Mukta', sans-serif;
+}
+
+.blueBg {
+    background-color: var(--nc-lk-2);
+}
+
+.landing,
+main,
+footer,
+.percentage,
+table,
+fieldset {
+    max-width: 90%;
+    padding: 2rem;
+    margin: 0 auto
+}
+
+.stort {
+    padding: 6px 40px;
+}
+
+textarea {
+    padding: 20px 40px;
+}
+
+.rammi div {
+    text-align: center;
+    margin: 5px;
+    border: 1px var(--nc-lk-2) dotted;
+}
+
+.rammi {
+    display: grid;
+}
+
+.center {
+    text-align: center;
+}
+
+
+table th {
+    text-transform: uppercase;
+}
+
+table th,
+table td {
+    text-align: center;
+}
+
+fieldset {
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 5%;
+}
+
+legend {
+    text-align: center;
+}
+
+table {
+    background: var(--daniel2);
+}
+
+nav {
+    display: inline-block;
+}
+
+.nav button {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 100000; /* milljón skrilljón billjón*/
+    font-size: 30px;
+}
+
+.nav a {
+    display: block;
+    text-decoration: none;
+    padding: 30px 20px;
+    background-color: var(--nc-lk-1);
+    color: white;
+    text-align: center;
+    font-family: var(--nc-font-sans);
+    font-weight: bold;
+}
+
+.nav .content {
+    display: none;
+    position: fixed;
+    right: 10px;
+    top: 83px;
+    min-width: 104px;
+    border: 1px solid var(--nc-lk-2);
+    z-index: 100000;
+}
+
+.nav:hover .content {
+    display: block;
+}
+
+.nav:hover button .icon-peace {
+    transform: rotate(90deg);
+}
+
+button .icon-peace {
+    display: inline-block; 
+    transition: transform 0.5s ease; 
+}
+
+.open-button {
+    background-color: var(--nc-bg-3);
+    color: var(--nc-tx-1);
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 18px;
+    right: 18px;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    line-height: 1px;
+    z-index: 1000;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    bottom: 55px;
+    right: 15px;
+    z-index: 500;
+}
+
+.form-popup {
+    max-width: 250px;
+    padding: 10px;
+    background-color: var(--daniel2);
+    border: 2px solid var(--daniel3);
+}
+
+.form-popup .input {
+    width: 250px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: var(--nc-lk-2);
+}
+
+.form-popup label {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-popup h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-popup .btn {
+    background-color: var(--nc-lk-2);
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.social {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@keyframes zoomIn {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+}
+  
+.zoomIn {
+    animation: zoomIn 0.5s ease-out forwards;
+}
+  
+@keyframes floatRight {
+    to {
+        transform: translateX(0);
+    }
+}
+  
+.floatRight {
+    transform: translateX(+200%);
+    animation: floatRight 0.5s ease-out forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes floatDown {
+    from {
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes zoomOut {
+    from {
+      transform: scale(4);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+}
+
+.zoomOut {
+    opacity: 0;
+    animation: zoomOut 0.5s ease-out forwards;
+    animation-delay: 1.2s;
+}
+
+@keyframes floatUp {
+    from {
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    .landing,
+    .percentage,
+    .textinn {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    blockquote {
+        margin-right: 10%;
+    }
+
+    .col-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .col-3,
+    .col-6,
+    .insane {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .col-4,
+    .col-5 {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .stort {
+        padding: 6px 260px;
+    }
+
+    textarea {
+        padding: 20px 260px;
+    }
+
+    .nav button {
+        width: 70px;
+        height: 70px;
+        position: fixed;
+        right: -1000px;
+        top: 10px;
+        z-index: 100000; /* milljón skrilljón billjón*/
+    }
+    
+    .nav a {
+        border: 2px solid var(--daniel2);
+        margin: 10px;
+        padding: 10px;
+        line-height: 10px;
+        width: 100px;
+        height: 10px;
+        flex-grow: 1; 
+    }
+    
+    .nav .content {        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border: none;
+        top: 1px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        width: 90%;
+        position: fixed;
+        top: 5px;
+
+    }
+    
+    .nav:hover .content {
+        display: flex;
+    }
+
+    .icon-cart, .icon-mobile, .icon-key, .content .icon-wordpress{
+        display: none;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .landing .icon-peace {
+        font-size: 130px;
+    }
+
+    .nav .content .floatUp1 {   
+        transform: translateY(-200%);
+        animation: floatDown 2.5s ease-out forwards;
+        animation-delay: 2.5s;
+    }
+
+    .nav .content .floatUp2 {   
+        transform: translateY(-200%);
+        animation: floatDown 2.5s ease-out forwards;
+        animation-delay: 2.8s;
+    }
+
+    .nav .content .floatUp3 {   
+        transform: translateY(-200%);
+        animation: floatDown 2.5s ease-out forwards;
+        animation-delay: 3.1s;
+    }
+
+    .nav .content .floatUp4 {   
+        transform: translateY(-200%);
+        animation: floatDown 2.5s ease-out forwards;
+        animation-delay: 3.4s;
+    }
+   
+    .hringur1 {
+        opacity: 0;
+        transform: translateY(+200%);
+        animation: floatDown 1s ease-out forwards;
+        animation-delay: 0.4s;
+    }
+
+    .hringur2 {
+        opacity: 0;
+        transform: translateY(+200%);
+        animation: floatDown 1s ease-out forwards;
+        animation-delay: 0.6s;
+    }
+
+    .hringur3 {
+        opacity: 0;
+        transform: translateY(+200%);
+        animation: floatDown 1s ease-out forwards;
+        animation-delay: 0.8s;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .landing {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .percentage {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .col-5 {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .col-6 {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .stort {
+        padding: 6px 210px;
+    }
+
+    textarea {
+        padding: 20px 210px;
+    }
+
+    .landing .icon-peace {
+        font-size: 170px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    table {
+        border: 0;
+    }
+
+    table caption {
+        font-size: 1.3em;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+
+    table td::before {
+        content: attr(hata-tables);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
